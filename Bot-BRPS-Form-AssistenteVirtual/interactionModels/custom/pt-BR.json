@@ -1,0 +1,360 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "InformNameIntent",
+          "samples": [
+            "sou {name}",
+            "{name}",
+            "é {name}",
+            "me chamo {name}",
+            "meu nome é {name}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "age",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "InformAgeIntent",
+          "samples": [
+            "eu tenho {age} anos",
+            "eu tenho {age} ",
+            "{age} anos",
+            "tenho {age} anos"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "condicao",
+              "type": "DescribingFeelings"
+            }
+          ],
+          "name": "InformPhysicalHealthIntent",
+          "samples": [
+            "minha saúde costuma ser {condicao}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "anxiety",
+              "type": "DescribingAnxiety"
+            }
+          ],
+          "name": "InformAnxietyIntent",
+          "samples": [
+            "{anxiety} estou preocupado",
+            "{anxiety}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "superior",
+              "type": "DescribingSuperiority"
+            }
+          ],
+          "name": "InformSuperiorityIntent",
+          "samples": [
+            "eu me sinto {superior}",
+            "me sinto {superior}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "humor",
+              "type": "DescribingHumor"
+            }
+          ],
+          "name": "InformMoodIntent",
+          "samples": [
+            "{humor} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "disorientation",
+              "type": "DescribingFeelings"
+            }
+          ],
+          "name": "InformDisorientationIntent",
+          "samples": [
+            "{disorientation}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "hostility",
+              "type": "DescribingHostility"
+            }
+          ],
+          "name": "InformHostilityIntent",
+          "samples": [
+            "{hostility}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "mistrust",
+              "type": "DiscribingMistrust"
+            }
+          ],
+          "name": "InformMistrustIntent",
+          "samples": [
+            "{mistrust}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "hallucinations",
+              "type": "DescribingHallucinations"
+            }
+          ],
+          "name": "InformHallucinationsIntent",
+          "samples": [
+            "{hallucinations}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "delusions",
+              "type": "DescribingDelusions"
+            }
+          ],
+          "name": "InformDelusionsIntent",
+          "samples": [
+            "{delusions}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "incomum",
+                  "horrível",
+                  "péssima"
+                ],
+                "value": "ruim"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "ótima",
+                  "bom"
+                ],
+                "value": "boa"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "comum",
+                  "aceitável"
+                ],
+                "value": "normal"
+              }
+            }
+          ],
+          "name": "DescribingFeelings"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "negativo"
+                ],
+                "value": "não"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "positivo"
+                ],
+                "value": "sim"
+              }
+            }
+          ],
+          "name": "DescribingAnxiety"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "zangado",
+                  "mal humorado",
+                  "irritado"
+                ],
+                "value": "mal-humorado"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "satisfeito",
+                  "sorridente",
+                  "contente",
+                  "feliz"
+                ],
+                "value": "bem-humorado"
+              }
+            }
+          ],
+          "name": "DescribingHumor"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "perdido"
+                ],
+                "value": "desorientado"
+              }
+            }
+          ],
+          "name": "DescribingDisorientation"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "agressivo",
+                  "com raiva",
+                  "incontrolável"
+                ],
+                "value": "irritado"
+              }
+            }
+          ],
+          "name": "DescribingHostility"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "suspeito"
+                ],
+                "value": "desconfiado"
+              }
+            }
+          ],
+          "name": "DiscribingMistrust"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "incomôdo",
+                  "sensações"
+                ],
+                "value": "esquisito"
+              }
+            }
+          ],
+          "name": "DescribingHallucinations"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "incomum"
+                ],
+                "value": "impressão"
+              }
+            }
+          ],
+          "name": "DescribingDelusions"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "imperfeito",
+                  "pior",
+                  "menor"
+                ],
+                "value": "inferior"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "sentimento de superioridade",
+                  "vencedor",
+                  "perfeito",
+                  "maior",
+                  "melhor"
+                ],
+                "value": "superior"
+              }
+            }
+          ],
+          "name": "DescribingSuperiority"
+        }
+      ],
+      "invocationName": "saúde primordial"
+    }
+  }
+}
